@@ -1,0 +1,20 @@
+You are building the NCPOR Polar Knowledge & Outreach Portal for Problem Statement 26063.
+
+Start by reading AGENTS.md and README_FOR_CODEX.md. Then inspect the repository and all project files before changing architecture. Read the relevant master specifications in this folder.
+
+The product is a functional polar-science knowledge and outreach platform, not a landing page. The target experience combines the polished, modern, restrained visual character of contemporary polar-science sites (with POLARIN as the primary visual inspiration and UK Polar Network as a secondary information-architecture inspiration) with a significantly more integrated knowledge repository.
+
+The final product must connect expeditions, publications, datasets, reports, media, people, stations, research topics, news, stories, events, educational resources, opportunities, and an admin publishing workflow. It must include a modern global search, advanced filters, a polar explorer/map, a scientific media gallery, a premium book-style PDF reader inspired by tools such as DearFlip, useful data visualizations, and a source-aware outreach-content generator with a demo fallback when an external AI provider is not configured.
+
+Do not copy competitor source code, assets, logos, branding, or written content. Build an original product.
+
+Do not fabricate official NCPOR data. Use coherent synthetic demo records and clearly label them as demo/synthetic where necessary.
+
+Do not try to implement everything in one uncontrolled change. Use PLAN.md as the milestone queue. Begin with repository reconnaissance and Milestone 0, produce a concrete implementation plan, then execute the foundation milestone. Run validation and update PLAN.md before moving on.
+
+The user does not want to manually maintain project scaffolding. Automate setup, migrations, seeding, test execution, and verification wherever practical.
+
+At the end of each milestone, do not merely say what remains. Run the actual checks, fix failures, and leave the repository in a working state.
+
+
+CRITICAL BACKEND RULE: The website is developed and run locally on the user computer, but the production data backend is Supabase Cloud. Use Supabase PostgreSQL, Supabase Auth, Supabase Storage, and Row Level Security. Do not introduce SQLite, a local Postgres server, Prisma as the production data layer, or local filesystem storage as substitutes for Supabase.

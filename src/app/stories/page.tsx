@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function StoriesPage() { return <section className="simple-page"><p className="eyebrow">FIELD STORIES · DEMO</p><h1>Human-scale science.</h1><p>Editorial storytelling is scaffolded as a real route. Publication workflows will activate after Supabase credentials and schema are applied.</p><Link className="button button-dark" href="/archive?type=Story">Browse story records</Link></section>; }

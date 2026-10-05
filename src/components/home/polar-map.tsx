@@ -1,0 +1,4 @@
+"use client";
+import { useState } from "react";
+import type { Station } from "@/types/content";
+export function PolarMap({ stations }: { stations: Station[] }) { const [selected, setSelected] = useState(stations[0]); return <div className="map-experience"><div className="map-disk" aria-label="Stylized polar station map">{stations.map((station, index) => <button className={`marker m${index}`} key={station.id} onClick={() => setSelected(station)} aria-label={`Show ${station.name}`}><span /></button>)}<div className="map-latitude" /><div className="map-longitude" /></div><div className="map-detail"><p className="eyebrow">STATION SELECTED</p><h3>{selected.name}</h3><p>{selected.focus}. This illustrative map uses real-shaped location metadata only; all surrounding content is demo content.</p><dl><div><dt>REGION</dt><dd>{selected.region}</dd></div><div><dt>CONNECTED RECORDS</dt><dd>{selected.expeditions} expeditions</dd></div></dl></div></div>; }

@@ -1,0 +1,2 @@
+import Link from "next/link";
+export default function EducationPage() { return <section className="simple-page"><p className="eyebrow">EDUCATION & OUTREACH</p><h1>Start with a question.</h1><p>This learning pathway is intentionally calm and explanatory. Structured resources will be delivered through the same provenance-aware archive.</p><Link className="button button-dark" href="/archive">Explore the knowledge archive</Link></section>; }
